@@ -2,9 +2,7 @@ package com.nttdata.formacao.ministryeducationapi.controllers;
 
 import com.nttdata.formacao.ministryeducationapi.entities.CourseEntity;
 import com.nttdata.formacao.ministryeducationapi.entities.EducationalYearEntity;
-import com.nttdata.formacao.ministryeducationapi.entities.StudentEntity;
 import com.nttdata.formacao.ministryeducationapi.services.CourseService;
-import com.nttdata.formacao.ministryeducationapi.services.StudentService;
 import com.nttdata.formacao.ministryeducationapi.validators.StudentValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -13,9 +11,6 @@ import java.util.List;
 
 @RestController
 public class MainController {
-
-    @Autowired
-    private StudentService studentService;
 
     @Autowired
     private CourseService courseService;
